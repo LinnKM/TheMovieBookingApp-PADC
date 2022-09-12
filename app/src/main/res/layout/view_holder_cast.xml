@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginEnd="@dimen/margin_large">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivActorImage"
+        android:layout_width="@dimen/width_cast_pic"
+        android:layout_height="@dimen/height_cast_pic"
+        android:src="@drawable/placeholder_cast"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvActorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        tools:text="@string/lbl_actor_name"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/ivActorImage"/>
+
+</RelativeLayout>

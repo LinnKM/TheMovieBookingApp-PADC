@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.padc.themoviebookingapp.viewpods.CustomDrawerViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivDrawerProfilePic"
+        android:layout_width="@dimen/width_profile_pic"
+        android:layout_height="@dimen/height_profile_pic"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_top_drawer_profile_pic"
+        android:elevation="@dimen/margin_medium"
+        android:src="@drawable/profile_pic_aesthetic" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDrawerProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_card_medium_2"
+        android:layout_marginTop="@dimen/margin_top_drawer_profile_name"
+        android:layout_toEndOf="@id/ivDrawerProfilePic"
+        android:text="Lily Johnson"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:fontFamily="@font/gotham_medium" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDrawerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDrawerProfileName"
+        android:layout_alignStart="@id/tvDrawerProfileName"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="Lily Johnson@gmail.com"
+        android:textColor="@color/colorWhiteLight"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:fontFamily="@font/gotham_light" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEditLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvDrawerEmail"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/tvDrawerEmail"
+        android:paddingEnd="@dimen/margin_medium_2"
+        android:text="@string/lbl_edit"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorWhiteLight"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:fontFamily="@font/gotham_light" />
+
+    <LinearLayout
+        android:id="@+id/llPromotionCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivDrawerProfilePic"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_medium_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLocalOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:src="@drawable/ic_baseline_local_offer_white_24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPromotionCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="@dimen/margin_medium_3"
+            android:text="@string/lbl_promotion_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+            app:fontFamily="@font/gotham_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSelectLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llPromotionCode"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_medium_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivGoogleTranslate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:src="@drawable/ic_baseline_g_translate_white_24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSelectLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="@dimen/margin_medium_3"
+            android:text="@string/lbl_select_language"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+            app:fontFamily="@font/gotham_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTermsOfService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llSelectLanguage"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_medium_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAssignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:src="@drawable/ic_baseline_assignment_white_24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTermsOfService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="@dimen/margin_medium_3"
+            android:text="@string/lbl_terms_of_services"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+            app:fontFamily="@font/gotham_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTermsOfService"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_medium_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:src="@drawable/ic_baseline_help_white_24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHelpLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="@dimen/margin_medium_3"
+            android:text="@string/lbl_help"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+            app:fontFamily="@font/gotham_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRateUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llHelp"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_medium_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:src="@drawable/ic_baseline_stars_white_24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRateUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="@dimen/margin_medium_3"
+            android:text="@string/lbl_rate_us"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+            app:fontFamily="@font/gotham_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_xlarge"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_medium_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:src="@drawable/ic_baseline_logout_white_24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="@dimen/margin_medium_3"
+            android:text="@string/lbl_log_out"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+            app:fontFamily="@font/gotham_light" />
+    </LinearLayout>
+</com.padc.themoviebookingapp.viewpods.CustomDrawerViewPod>

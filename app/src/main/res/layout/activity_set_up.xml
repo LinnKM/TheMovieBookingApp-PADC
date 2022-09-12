@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SetUpActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWelcomeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_top_set_up_screen"
+        android:fontFamily="@font/gotham_medium"
+        android:text="@string/lbl_welcome"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_heading_1x" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGreetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWelcomeLabel"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:fontFamily="@font/gotham_light"
+        android:textStyle="bold"
+        android:text="@string/lbl_greet_two"
+        android:textColor="@color/colorPrimaryTextLight" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutDifferentViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGreetLabel"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        app:tabIndicator="@drawable/my_custom_indicator"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabIndicatorHeight="@dimen/height_tab_indicator"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextAppearance="@style/MyCustomTabText" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpDifferentAccountSetUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayoutDifferentViewPager"/>
+
+</RelativeLayout>

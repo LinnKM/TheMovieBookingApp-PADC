@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">The Movie Booking App</string>
+    <string name="lbl_get_started">Get Started</string>
+    <string name="lbl_welcome">Welcome!</string>
+    <string name="lbl_greet_one">Hello! Welcome to Galaxy App.</string>
+    <string name="lbl_greet_two">Welcome back, login to continue</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_confirm">Confirm</string>
+    <string name="lbl_sign_in_facebook">Sign in with facebook</string>
+    <string name="lbl_sign_in_google">Sign in with google</string>
+    <string name="lbl_forgot_password">Forgot Password?</string>
+    <string name="lbl_phone_number">PhoneNumber</string>
+    <string name="lbl_name">Name</string>
+    <string name="lbl_now_showing">Now Showing</string>
+    <string name="lbl_get_your_ticket">Get your ticket</string>
+    <string name="lbl_movie_name">Detective Pikachu</string>
+    <string name="lbl_genre_and_show_time">Mystery/Adventure . 1h 45m</string>
+    <string name="lbl_genre_label">Adventure</string>
+    <string name="lbl_plot_summary">Plot Summary</string>
+    <string name="lbl_plot">Ace detective Harry Goodman goes mysteriously missing, prompting his 21-year-old son, Tim, to find out what happened. Aiding in the investigation is Harry\'s former Pokémon partner, wise-cracking, adorable super-sleuth Detective Pikachu. Finding that they are uniquely equipped to work together, as Tim is the only human who can talk with Pikachu, they join forces to unravel the tangled mystery.</string>
+    <string name="lbl_cast">Cast</string>
+    <string name="lbl_imdb_rating">IMDb 6.6</string>
+    <string name="lbl_duration">1h 45m</string>
+    <string name="lbl_coming_soon">Coming Soon</string>
+    <string name="title_search">search</string>
+    <string name="lbl_hi">Hi</string>
+    <string name="lbl_user_name">Lily!</string>
+    <string name="lbl_date_number">10</string>
+    <string name="lbl_date_day">Fr</string>
+    <string name="lbl_next">Next</string>
+    <string name="title_activity_snack">SnackActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lbl_combo_set">Combo set M</string>
+    <string name="lbl_combo_items">Combo size M 22oz. Coke (X1) and medium popcorn (X1)</string>
+    <string name="lbl_price">15$</string>
+    <string name="lbl_get_now">Get it now</string>
+    <string name="lbl_no_promo_code">Don\'t have any promo code?</string>
+    <string name="lbl_enter_promo_code">Enter promo code</string>
+    <string name="lbl_sub_total">Sub total : 40$</string>
+    <string name="lbl_payment_method">Payment method</string>
+    <string name="lbl_pay_amount">Pay $40.00</string>
+    <string name="lbl_payment_amount">Payment amount</string>
+    <string name="lbl_payment_amount_cash">926.21</string>
+    <string name="lbl_awesome">Awesome!</string>
+    <string name="lbl_Imax">0m - IMAX</string>
+    <string name="lbl_this_is_ticket">This is your ticket.</string>
+    <string name="lbl_booking_no">Booking no</string>
+    <string name="lbl_booking_numbers">GC1547219308</string>
+    <string name="lbl_show_time_date">Show time - Date</string>
+    <string name="lbl_time_and_date">7:00 PM - 10 May</string>
+    <string name="lbl_theater">Theater</string>
+    <string name="lbl_theater_name">Galaxy Cinema - Golden City</string>
+    <string name="lbl_screen">Screen</string>
+    <string name="lbl_screen_number">2</string>
+    <string name="lbl_row">Row</string>
+    <string name="lbl_row_type">D</string>
+    <string name="lbl_seats">Seats</string>
+    <string name="lbl_seat_numbers">5, 6</string>
+    <string name="lbl_price_label">Price</string>
+    <string name="lbl_amount">$40.00</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="lbl_promotion_code">Promotion code</string>
+    <string name="lbl_select_language">Select a language</string>
+    <string name="lbl_terms_of_services">Terms of services</string>
+    <string name="lbl_help">Help</string>
+    <string name="lbl_rate_us">Rate us</string>
+    <string name="lbl_log_out">Log Out</string>
+    <string name="Open">Open Drawer</string>
+    <string name="Close">Close Drawer</string>
+    <string name="lbl_tickets">Tickets</string>
+    <string name="LOGINSTATE">login</string>
+    <string name="REGISTERSTATE">register</string>
+    <string name="lbl_actor_name">Justice Smith</string>
+
+</resources>

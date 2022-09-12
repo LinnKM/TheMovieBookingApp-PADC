@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.padc.themoviebookingapp.viewpods.SignInViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/btnSignInFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:background="@drawable/background_transparent_button"
+        android:paddingTop="@dimen/margin_card_medium_2"
+        android:paddingBottom="@dimen/margin_medium_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivFacebook"
+            android:layout_width="@dimen/margin_xlarge"
+            android:layout_height="@dimen/margin_xlarge"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:src="@drawable/ic_facebook" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_toEndOf="@id/ivFacebook"
+            android:fontFamily="@font/gotham_medium"
+            android:text="@string/lbl_sign_in_facebook"
+            android:textColor="@color/colorPrimaryTextLight"
+            android:textSize="@dimen/text_regular_2x" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnSignInGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignInFacebook"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:background="@drawable/background_transparent_button"
+        android:paddingTop="@dimen/margin_medium_3"
+        android:paddingBottom="@dimen/margin_medium_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivGoogle"
+            android:layout_width="@dimen/margin_large"
+            android:layout_height="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_start_ic"
+            android:src="@drawable/ic_google"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_start_4x_large"
+            android:layout_toEndOf="@id/ivGoogle"
+            android:fontFamily="@font/gotham_medium"
+            android:text="@string/lbl_sign_in_google"
+            android:textColor="@color/colorPrimaryTextLight"
+            android:textSize="@dimen/text_regular_2x" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAccConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignInGoogle"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_xxlarge"
+        android:background="@drawable/valid_button_background"
+        android:paddingTop="@dimen/margin_medium_3"
+        android:paddingBottom="@dimen/margin_medium_3"
+        android:text="@string/lbl_confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham_medium"
+        android:textSize="@dimen/text_regular_2x" />
+
+</com.padc.themoviebookingapp.viewpods.SignInViewPod>

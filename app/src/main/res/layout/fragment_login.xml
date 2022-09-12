@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.LoginFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEmailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_top_5x_large"
+                android:text="@string/lbl_email"
+                android:textColor="@color/colorPrimaryTextLight"
+                android:textStyle="bold"
+                app:fontFamily="@font/gotham_light" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvEmailLabel"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:background="@drawable/edit_text_modified_states"
+                android:paddingStart="@dimen/margin_card_medium_2"
+                android:paddingTop="@dimen/margin_medium_2"
+                android:paddingBottom="@dimen/margin_card_medium_2"
+                android:textCursorDrawable="@drawable/cursor_drawable" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPasswordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTextEmail"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_xxlarge"
+                android:text="@string/lbl_password"
+                android:textColor="@color/colorPrimaryTextLight"
+                android:textStyle="bold"
+                app:fontFamily="@font/gotham_light" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPasswordLabel"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:background="@drawable/edit_text_modified_states"
+                android:inputType="textPassword"
+                android:paddingStart="@dimen/margin_card_medium_2"
+                android:paddingTop="@dimen/margin_medium_2"
+                android:paddingBottom="@dimen/margin_card_medium_2"
+                android:textCursorDrawable="@drawable/cursor_drawable" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvForgotPasswordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTextPassword"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:layout_marginBottom="@dimen/margin_xlarge"
+                android:fontFamily="@font/gotham_light"
+                android:text="@string/lbl_forgot_password"
+                android:textColor="@color/colorPrimaryTextLight"
+                android:textStyle="bold" />
+
+            <include
+                android:id="@+id/vPodLogInButtons"
+                layout="@layout/view_pod_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tvForgotPasswordLabel" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

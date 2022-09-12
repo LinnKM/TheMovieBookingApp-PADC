@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NewPaymentCardActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolBarAddCardScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCardNumberLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:text="Card number"
+            android:textColor="@color/colorPrimaryTextLight"
+            android:textStyle="bold"
+            app:fontFamily="@font/gotham_light" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCardNumberLabel"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:background="@drawable/edit_text_modified_states"
+            android:inputType="numberDecimal"
+            android:paddingStart="@dimen/margin_card_medium_2"
+            android:paddingTop="@dimen/margin_medium_2"
+            android:paddingBottom="@dimen/margin_card_medium_2"
+            android:textCursorDrawable="@drawable/cursor_drawable" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCardHolderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtCardNumber"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="Card holder"
+            android:textColor="@color/colorPrimaryTextLight"
+            android:textStyle="bold"
+            app:fontFamily="@font/gotham_light" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtCardHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCardHolderLabel"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:background="@drawable/edit_text_modified_states"
+            android:paddingStart="@dimen/margin_card_medium_2"
+            android:paddingTop="@dimen/margin_medium_2"
+            android:paddingBottom="@dimen/margin_card_medium_2"
+            android:textCursorDrawable="@drawable/cursor_drawable" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvExpirationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtCardHolder"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="Expiration Date"
+            android:textColor="@color/colorPrimaryTextLight"
+            android:textStyle="bold"
+            app:fontFamily="@font/gotham_light" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtExpirationDate"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvExpirationLabel"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:background="@drawable/edit_text_modified_states"
+            android:paddingStart="@dimen/margin_card_medium_2"
+            android:paddingTop="@dimen/margin_medium_2"
+            android:paddingBottom="@dimen/margin_card_medium_2"
+            android:textCursorDrawable="@drawable/cursor_drawable" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCvcLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtCardHolder"
+            android:layout_alignStart="@id/edtCvc"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="CVC"
+            android:textColor="@color/colorPrimaryTextLight"
+            android:textStyle="bold"
+            app:fontFamily="@font/gotham_light" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtCvc"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvExpirationLabel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:background="@drawable/edit_text_modified_states"
+            android:paddingStart="@dimen/margin_card_medium_2"
+            android:paddingTop="@dimen/margin_medium_2"
+            android:paddingBottom="@dimen/margin_card_medium_2"
+            android:textCursorDrawable="@drawable/cursor_drawable" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:layout_marginBottom="@dimen/margin_xlarge"
+            android:background="@drawable/valid_button_background"
+            android:fontFamily="@font/gotham_medium"
+            android:paddingTop="@dimen/margin_medium_3"
+            android:paddingBottom="@dimen/margin_medium_3"
+            android:shadowColor="@null"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x" />
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

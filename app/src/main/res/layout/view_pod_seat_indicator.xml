@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.padc.themoviebookingapp.viewpods.SeatIndicatorViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/viewSeatIndicator"
+        android:layout_width="@dimen/margin_large"
+        android:layout_height="@dimen/margin_large"
+        android:background="@drawable/background_seat_available_indicator"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_toEndOf="@id/viewSeatIndicator"
+        android:text="Your selection"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:fontFamily="@font/gotham_light" />
+
+</com.padc.themoviebookingapp.viewpods.SeatIndicatorViewPod>

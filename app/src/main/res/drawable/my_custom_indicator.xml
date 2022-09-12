@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:start="@dimen/margin_medium"
+        android:end="@dimen/margin_medium">
+
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/margin_card_medium"/>
+        </shape>
+
+    </item>
+</layer-list>

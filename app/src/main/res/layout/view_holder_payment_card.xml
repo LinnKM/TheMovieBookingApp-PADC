@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_medium_n"
+    android:layout_marginEnd="@dimen/margin_medium_n">
+
+    <com.blure.complexview.ComplexView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:radius="@dimen/margin_medium_2"
+        app:shadow="true"
+        app:shadowColor="#2B2A2A"
+        app:shadowPosition="left|right|top|bottom"
+        app:shadowSpread="1">
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_payment_card"
+            android:layout_height="@dimen/height_payment_card"
+            android:background="@drawable/background_payment_card">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_white" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivVisa"
+                android:layout_width="@dimen/margin_xxlarge"
+                android:layout_height="@dimen/margin_xxlarge"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:elevation="@dimen/margin_medium"
+                android:src="@drawable/ic_visa_white_96dp"
+                app:tint="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDotMenu"
+                android:layout_width="@dimen/margin_medium_3"
+                android:layout_height="@dimen/margin_medium_3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_marginEnd="@dimen/margin_medium_3"
+                android:elevation="@dimen/margin_medium"
+                android:src="@drawable/ic_dot_menu_black_96dp"
+                app:tint="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStarCodes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivVisa"
+                android:layout_alignStart="@id/ivVisa"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:elevation="@dimen/margin_medium"
+                android:fontFamily="@font/gotham_medium"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="* * * *   * * * *   * * * *"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_heading_1x_dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCardLastNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivVisa"
+                android:layout_alignEnd="@id/ivDotMenu"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:elevation="@dimen/margin_medium"
+                android:fontFamily="@font/gotham_medium"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="8014"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_regular_3x_dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCardHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvStarCodes"
+                android:layout_alignStart="@id/ivVisa"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:elevation="@dimen/margin_medium"
+                android:fontFamily="@font/gotham_light"
+                android:text="CARD HOLDER"
+                android:textColor="@color/colorWhiteLight"
+                android:textSize="@dimen/text_regular_dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvExpires"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvStarCodes"
+                android:layout_alignEnd="@id/ivDotMenu"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:elevation="@dimen/margin_medium"
+                android:fontFamily="@font/gotham_light"
+                android:text="EXPIRES"
+                android:textColor="@color/colorWhiteLight"
+                android:textSize="@dimen/text_regular_dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCardHolder"
+                android:layout_alignStart="@id/ivVisa"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:elevation="@dimen/margin_medium"
+                android:fontFamily="@font/gotham_medium"
+                android:text="Lily Johnson"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_small_dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvExpireDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvExpires"
+                android:layout_alignEnd="@id/ivDotMenu"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:elevation="@dimen/margin_medium"
+                android:fontFamily="@font/gotham_medium"
+                android:text="08/21"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_small_dp" />
+        </RelativeLayout>
+    </com.blure.complexview.ComplexView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

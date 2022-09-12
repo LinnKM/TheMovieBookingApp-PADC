@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/width_movie_view_holder"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_medium_3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMovie"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_movie"
+                android:elevation="@dimen/margin_medium"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder_detective_pikachu" />
+        </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMovieNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvMovie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:fontFamily="@font/gotham_medium"
+        android:text="@string/lbl_movie_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_small" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGenreAndDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMovieNameLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_card_medium"
+        android:fontFamily="@font/gotham_light"
+        android:text="@string/lbl_genre_and_show_time"
+        android:textColor="@color/colorPrimaryTextLight"
+        android:textSize="@dimen/text_extreme_small"
+        android:textStyle="bold" />
+
+</RelativeLayout>

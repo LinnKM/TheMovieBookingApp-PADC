@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin_large">
+
+    <LinearLayout
+        android:id="@+id/llComboSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvComboSetLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="@font/gotham_light"
+            android:paddingStart="@dimen/margin_medium_2"
+            android:text="@string/lbl_combo_set"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/gotham_light"
+            android:gravity="end"
+            android:paddingEnd="@dimen/padding_xxxlarge"
+            android:text="@string/lbl_price"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llComboSetItemAndAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llComboSet"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margin_medium"
+        android:weightSum="3">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvComboItemsDescription"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:fontFamily="@font/gotham_light"
+            android:paddingStart="@dimen/margin_medium_2"
+            android:text="@string/lbl_combo_items"
+            android:textColor="@color/colorPrimaryTextLight"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlComboSetAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="end"
+            android:paddingEnd="@dimen/margin_medium_2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnDecrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_left_rounded_corner"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/padding_medium"
+                android:paddingTop="@dimen/padding_small"
+                android:paddingEnd="@dimen/padding_medium"
+                android:paddingBottom="@dimen/padding_small"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_2x_dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAmountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btnDecrease"
+                android:background="@drawable/background_transparent_rectangle"
+                android:paddingStart="@dimen/padding_card_medium"
+                android:paddingTop="@dimen/padding_extreme_small"
+                android:paddingEnd="@dimen/padding_card_medium"
+                android:paddingBottom="@dimen/padding_extreme_small"
+                android:text="0"
+                android:textColor="#99000000"
+                android:textSize="@dimen/text_regular_3x_dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnIncrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tvAmountLabel"
+                android:background="@drawable/background_right_rounded_corner"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/margin_card_medium_2"
+                android:paddingTop="@dimen/padding_small"
+                android:paddingEnd="@dimen/margin_card_medium_2"
+                android:paddingBottom="@dimen/padding_small"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_2x_dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SeatingPlanActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBarSeatingPlanScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/padding_bottom_seating_plan">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMovieNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/lbl_movie_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_heading_1x"
+                app:fontFamily="@font/gotham_medium" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMovieNameLabel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/lbl_theater_name"
+                android:textColor="@color/colorPrimaryTextLight"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold"
+                app:fontFamily="@font/gotham_light" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvShowTimeDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvLocation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="Wednesday, 10 May, 07:00 PM"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold"
+                app:fontFamily="@font/gotham_light" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivGreenCurve"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_xlarge"
+                android:layout_below="@id/tvShowTimeDate"
+                android:layout_marginTop="@dimen/margin_large"
+                android:src="@drawable/green_curve" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSeatingPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivGreenCurve"
+                android:layout_marginTop="@dimen/margin_xxlarge" />
+
+            <LinearLayout
+                android:id="@+id/llIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rvSeatingPlan"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/margin_medium_3"
+                android:paddingEnd="@dimen/margin_medium_3">
+
+                <include
+                    android:id="@+id/vPodSeatAvailable"
+                    layout="@layout/view_pod_seat_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium_2" />
+
+                <include
+                    android:id="@+id/vPodSeatReserved"
+                    layout="@layout/view_pod_seat_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium_2" />
+
+                <include
+                    android:id="@+id/vPodSeatYourSelection"
+                    layout="@layout/view_pod_seat_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDottedLine"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/llIndicator"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:src="@drawable/dotted" />
+
+            <LinearLayout
+                android:id="@+id/llTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivDottedLine"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/margin_medium_3"
+                android:paddingEnd="@dimen/margin_medium_3"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTicketsLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lbl_tickets"
+                    android:textColor="@color/colorPrimaryTextLight"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/gotham_light" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTicketAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/gotham_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSeats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llTicket"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/margin_medium_3"
+                android:paddingEnd="@dimen/margin_medium_3"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSeatsLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lbl_seats"
+                    android:textColor="@color/colorPrimaryTextLight"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/gotham_light" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSeatPosition"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/gotham_light" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/background_blur">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBuyTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:layout_marginBottom="@dimen/margin_xlarge"
+            android:background="@drawable/invalid_button_background"
+            android:fontFamily="@font/gotham_medium"
+            android:paddingTop="@dimen/margin_medium_3"
+            android:paddingBottom="@dimen/margin_medium_3"
+            android:text="Buy Ticket $0.00"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x" />
+
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable-v24/background_back_button.xml" value="0.1525" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/backgournd_transparent_rectangle.xml" value="0.1385" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background.xml" value="0.1285" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_blur.xml" value="0.1855" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_circle.xml" value="0.1465" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_circle_indicator.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_edit_text.xml" value="0.155" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_edit_text_on_foucsed.xml" value="0.1855" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_fill_button.xml" value="0.155" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_frame_layout.xml" value="0.1345" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_genre_chip.xml" value="0.1525" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_left_rounded_corner.xml" value="0.1385" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_movie_seat_available.xml" value="0.147" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_movie_seat_selected.xml" value="0.147" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_movie_seat_taken.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_mvoie_seat_available.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_payment_card.xml" value="0.1385" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_play_button.xml" value="0.1525" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_profile_pic.xml" value="0.1665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_receipt.xml" value="0.136" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_right_rounded_corner.xml" value="0.1385" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_round_corner_image_view.xml" value="0.1665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_rounded_corner.xml" value="0.1665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_seat_selection_indicator.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_seat_taken_indicator.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_shadow.xml" value="0.1665" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_start_button.xml" value="0.1555" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_transparent_button.xml" value="0.1855" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_transparent_rectangle.xml" value="0.1855" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/cursor_drawable.xml" value="0.155" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/dotted.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/edit_modified_states.xml" value="0.1285" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/gradient_white.xml" value="0.1385" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/ic_baseline_chevron_left_black_24dp.xml" value="0.14" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/ic_baseline_chevron_left_white_24dp.xml" value="0.1525" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/ic_baseline_play_arrow_white_24dp.xml" value="0.1855" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/ic_baseline_play_circle_outline_white_24dp.xml" value="0.1855" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.155" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/invalid_button_background.xml" value="0.147" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/my_custom_indicator.xml" value="0.155" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/selected_background_button.xml" value="0.1285" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/valid_button_background.xml" value="0.147" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/valid_button_backgrounds.xml" value="0.147" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout-v28/activity_home_screen.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_date_time.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_get_started.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_home_screen.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_movie_detail.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_new_payment_card.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_payment_card.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_receipt.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_seating_plan.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_select_date_time.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_set_up.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_snacks.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/fragment_first.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/fragment_second.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_base_time.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_cast.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_date_section.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_genre_chip.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_movie.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_movie_seat.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_payment_card.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_payment_section.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_snack_section.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_test.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_time_section.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_pod_custom_drawer.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_pod_dotted_line.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_pod_movie_list.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_pod_seat_indicator.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_pod_sign_in.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/menu/menu_home_screen.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
